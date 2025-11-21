@@ -1,4 +1,17 @@
-# UoA Research AI GPU platform docs
+# UoA Research AI GPU Platform Docs
+
+[![Deploy docs](https://github.com/drai-inn/uoa-ai-gpu-docs/actions/workflows/docs.yml/badge.svg)](https://github.com/drai-inn/uoa-ai-gpu-docs/actions/workflows/docs.yml)
+[![Built with MkDocs](https://img.shields.io/badge/Built%20with-MkDocs-blue)](https://www.mkdocs.org/)
+
+Welcome to the official documentation repository for the University of Auckland Research AI GPU Platform. This site provides comprehensive guides, reference materials, and tutorials for researchers using our GPU resources.
+
+**[🚀 View the Live Documentation](https://drai-inn.github.io/uoa-ai-gpu-docs/)**
+
+## Contributing
+
+We welcome contributions from the community! Whether it's fixing a typo, adding a new guide, or improving existing content, your help is appreciated.
+
+👉 **Please read our [Contribution Guidelines](CONTRIBUTING.md) to get started.**
 
 ## Development Setup
 

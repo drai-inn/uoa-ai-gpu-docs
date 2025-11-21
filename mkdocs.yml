@@ -47,7 +47,7 @@ theme:
   favicon: assets/ake-uoa-k8s-party.gif
   font: false
 
-copyright: Copyright &copy; 2024 The University of Auckland
+copyright: Copyright &copy; 2025 The University of Auckland
 
 extra_css:
   - stylesheets/extra.css

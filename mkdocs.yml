@@ -1,5 +1,7 @@
-site_name: My Project Documentation
+site_name: UoA Research AI GPU Platform
 site_url: https://drai-inn.github.io/uoa-ai-gpu-docs/
+repo_url: https://github.com/drai-inn/uoa-ai-gpu-docs
+repo_name: drai-inn/uoa-ai-gpu-docs
 
 nav:
   - Home: index.md
@@ -9,5 +11,33 @@ nav:
     - LLMs on NeSI: guides/llm-on-nesi.md
   - Reference:
     - Benchmarks: reference/benchmarks.md
+
 theme:
   name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences

@@ -45,9 +45,9 @@
   margin: -2rem -2rem 4rem -2rem;
   /* Negative margins to break out of container */
   padding: 6rem 2rem;
-  background-image: linear-gradient(rgba(0, 70, 127, 0.85), rgba(0, 70, 127, 0.7)), url('../assets/UOA - Teams Background Graphic 2025.jpg');
+  /* background-image: linear-gradient(rgba(0, 70, 127, 0.85), rgba(0, 70, 127, 0.7)), url('../assets/UOA - Teams Background Graphic 2025.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center; */
   color: white;
   text-align: center;
   display: flex;
@@ -65,7 +65,7 @@
 
 .hero-title {
   font-size: 4rem;
-  font-weight: 800;
+  font-weight: 500;
   line-height: 1.1;
   margin-bottom: 1.5rem;
   color: white;
@@ -73,7 +73,7 @@
 
 .hero-subtitle {
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 250;
   max-width: 800px;
   margin-bottom: 2.5rem;
   opacity: 0.9;

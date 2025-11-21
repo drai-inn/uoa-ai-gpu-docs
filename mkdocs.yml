@@ -1,4 +1,6 @@
 site_name: My Project Documentation
+site_url: https://drai-inn.github.io/uoa-ai-gpu-docs/
+
 nav:
   - Home: index.md
 theme:

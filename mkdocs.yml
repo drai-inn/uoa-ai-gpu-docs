@@ -3,5 +3,11 @@ site_url: https://drai-inn.github.io/uoa-ai-gpu-docs/
 
 nav:
   - Home: index.md
+  - Platform Architecture:
+    - Overview: platform/overview.md
+  - Guides:
+    - LLMs on NeSI: guides/llm-on-nesi.md
+  - Reference:
+    - Benchmarks: reference/benchmarks.md
 theme:
   name: material

@@ -33,6 +33,12 @@ hide:
 
     Tailored specifically to support the needs of academic research, providing the compute power required for breakthrough discoveries.
 
+-   :material-account-group:{ .lg .middle } **Community Driven**
+
+    ---
+
+    Built by researchers, for researchers. Contribute your own guides, fix issues, and help shape the platform.
+
 </div>
 
 ## Quick Links
@@ -50,5 +56,9 @@ hide:
 -   [**Benchmarks**](reference/benchmarks.md)
     ---
     Performance metrics and comparison data.
+
+-   [**Community & Contributing**](contributing.md)
+    ---
+    Join the community, report issues, and contribute guides.
 
 </div>

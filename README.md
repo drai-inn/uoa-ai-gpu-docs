@@ -7,11 +7,15 @@ Welcome to the official documentation repository for the University of Auckland 
 
 **[🚀 View the Live Documentation](https://drai-inn.github.io/uoa-ai-gpu-docs/)**
 
-## Contributing
+## Community & Contributing
 
-We welcome contributions from the community! Whether it's fixing a typo, adding a new guide, or improving existing content, your help is appreciated.
+This documentation is built by the community, for the community.
 
-👉 **Please read our [Contribution Guidelines](CONTRIBUTING.md) to get started.**
+*   **✏️ Edit this page**: Click the pencil icon on any page to fix typos or suggest changes.
+*   **🤝 Contributing Guide**: Read our [Contribution Guidelines](CONTRIBUTING.md) for more details.
+*   **📜 Code of Conduct**: We are committed to a welcoming environment. Please read our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+We welcome contributions from everyone—researchers, students, and engineers!
 
 ## Development Setup
 

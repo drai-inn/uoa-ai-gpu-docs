@@ -2,6 +2,7 @@ site_name: UoA Research AI GPU Platform
 site_url: https://drai-inn.github.io/uoa-ai-gpu-docs/
 repo_url: https://github.com/drai-inn/uoa-ai-gpu-docs
 repo_name: drai-inn/uoa-ai-gpu-docs
+edit_uri: edit/main/docs/
 
 nav:
   - Home: index.md
@@ -11,6 +12,9 @@ nav:
     - LLMs on NeSI: guides/llm-on-nesi.md
   - Reference:
     - Benchmarks: reference/benchmarks.md
+  - Community:
+    - Contributing: contributing.md
+    - Code of Conduct: code_of_conduct.md
 
 theme:
   name: material

@@ -13,31 +13,25 @@ hide:
   </div>
 </div>
 
-<div class="grid cards feature-grid" markdown>
+<div class="grid cards" markdown>
 
-<div class="feature-card">
-  <span class="feature-icon" markdown>
-  :material-server-network:
-  </span>
-  <div class="feature-title">Scalable Infrastructure</div>
-  <div class="feature-text">Built on Kubernetes to provide flexible and scalable GPU resources for diverse research workloads, from training to inference.</div>
-</div>
+-   :material-server-network:{ .lg .middle } **Scalable Infrastructure**
 
-<div class="feature-card">
-  <span class="feature-icon" markdown>
-  :material-shield-check:
-  </span>
-  <div class="feature-title">Secure & Managed</div>
-  <div class="feature-text">Integrated with Keycloak for secure authentication and robust policy management, ensuring your research data remains protected.</div>
-</div>
+    ---
 
-<div class="feature-card">
-  <span class="feature-icon" markdown>
-  :material-school:
-  </span>
-  <div class="feature-title">Research Focused</div>
-  <div class="feature-text">Tailored specifically to support the needs of academic research, providing the compute power required for breakthrough discoveries.</div>
-</div>
+    Built on Kubernetes to provide flexible and scalable GPU resources for diverse research workloads, from training to inference.
+
+-   :material-shield-check:{ .lg .middle } **Secure & Managed**
+
+    ---
+
+    Integrated with Keycloak for secure authentication and robust policy management, ensuring your research data remains protected.
+
+-   :material-school:{ .lg .middle } **Research Focused**
+
+    ---
+
+    Tailored specifically to support the needs of academic research, providing the compute power required for breakthrough discoveries.
 
 </div>
 

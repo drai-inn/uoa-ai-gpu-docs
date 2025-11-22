@@ -33,3 +33,6 @@ share/python-wheels/
 
 # MkDocs
 site/
+
+# Logs
+*.log

@@ -61,7 +61,7 @@ If you want to preview changes locally or make significant updates, here's how t
 
 ## Community Standards
 
-We are committed to providing a friendly, safe, and welcoming environment for all. Please read and uphold our [Code of Conduct](CODE_OF_CONDUCT.md).
+We are committed to providing a friendly, safe, and welcoming environment for all. Please read and uphold our [Code of Conduct](code_of_conduct.md).
 
 ---
 

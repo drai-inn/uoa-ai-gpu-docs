@@ -47,6 +47,7 @@ theme:
     - search.suggest
     - search.highlight
     - content.code.copy
+    - content.action.edit
   logo: assets/ake-uoa-k8s-party.gif
   favicon: assets/ake-uoa-k8s-party.gif
   font: false

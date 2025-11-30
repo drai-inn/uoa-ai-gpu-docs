@@ -1,0 +1,30 @@
+[project]
+site_name = "UoA Research AI GPU Platform"
+url = "https://drai-inn.github.io/uoa-ai-gpu-docs/"
+
+[repo]
+url = "https://github.com/drai-inn/uoa-ai-gpu-docs"
+name = "drai-inn/uoa-ai-gpu-docs"
+edit_uri = "edit/main/docs/"
+
+[theme]
+name = "zensical"
+logo = "assets/ake-uoa-k8s-party.gif"
+favicon = "assets/ake-uoa-k8s-party.gif"
+
+[[project.theme.palette]]
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+[project.theme.font]
+text = "Inter"
+code = "Jetbrains Mono"
+
+[copyright]
+text = "Copyright &copy; 2025 The University of Auckland"

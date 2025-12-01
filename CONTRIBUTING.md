@@ -22,7 +22,7 @@ To keep our docs consistent and friendly:
     *   Use `code blocks` for commands and file paths.
     *   Use **bold** for UI elements or key terms.
 *   **Images**: Keep screenshots focused and relevant.
-*   **Icons**: We use Material Design icons (e.g., `:material-server-network:`).
+*   **Icons**: We use Lucide icons (e.g., `lucide/server`).
 
 ## Development Setup
 
@@ -44,11 +44,11 @@ If you want to preview changes locally or make significant updates, here's how t
     ```bash
     pip install -r requirements.txt
     ```
-    *Note: This installs `mkdocs`, `mkdocs-material`, and `pymdown-extensions`.*
+    *Note: This installs `zensical`.*
 
 4.  **Run the local server:**
     ```bash
-    mkdocs serve
+    zensical serve
     ```
     The site will be available at `http://127.0.0.1:8000`. Changes will auto-reload.
 

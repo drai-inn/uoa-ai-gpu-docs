@@ -11,6 +11,18 @@ edit_uri = "edit/main/docs/"
 name = "zensical"
 logo = "assets/ake-uoa-k8s-party.gif"
 favicon = "assets/ake-uoa-k8s-party.gif"
+extra_css = ["stylesheets/extra.css"]
+
+[project.theme]
+features = [
+    "navigation.tabs",
+    "navigation.sections",
+    "navigation.top",
+    "navigation.footer",
+    "search.suggest",
+    "search.highlight",
+    "content.code.copy"
+]
 
 [[project.theme.palette]]
 scheme = "default"

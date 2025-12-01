@@ -88,6 +88,16 @@
 }
 
 /* Custom Button Styles for Hero */
+.md-button {
+  display: inline-block;
+  padding: 0.625em 2em;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s;
+  text-decoration: none;
+  font-weight: 700;
+}
+
 .md-button.md-button--primary.hero-btn {
   background-color: white;
   color: var(--uoa-blue);

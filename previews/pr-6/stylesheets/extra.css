@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/Inter-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../assets/Inter-Italic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/Inter-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/Inter-Bold.otf') format('opentype');
+}
+
+:root {
+  --md-text-font: "Inter";
+  --md-code-font: "Inter";
+  --uoa-blue: #00467F;
+  --uoa-light-blue: #0099D8;
+}
+
+/* Typography Overrides */
+.md-typeset h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  margin: -2rem -2rem 4rem -2rem;
+  /* Negative margins to break out of container */
+  padding: 6rem 2rem;
+  /* background-image: linear-gradient(rgba(0, 70, 127, 0.85), rgba(0, 70, 127, 0.7)), url('../assets/UOA - Teams Background Graphic 2025.jpg');
+  background-size: cover;
+  background-position: center; */
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Adjust for mobile */
+@media screen and (max-width: 76.1875em) {
+  .hero-section {
+    margin: -2rem -1rem 2rem -1rem;
+  }
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 250;
+  max-width: 800px;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+  color: white;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Custom Button Styles for Hero */
+.md-button {
+  display: inline-block;
+  padding: 0.625em 2em;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 0.25s, color 0.25s;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.md-button.md-button--primary.hero-btn {
+  background-color: white;
+  color: var(--uoa-blue);
+  border-color: white;
+  font-weight: 700;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+}
+
+.md-button.md-button--primary.hero-btn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--uoa-blue);
+}
+
+.md-button.hero-btn-secondary {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  font-weight: 700;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+}
+
+.md-button.hero-btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+/* Feature Cards Grid */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: var(--md-default-bg-color);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--uoa-blue);
+  display: block;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--md-default-fg-color);
+}
+
+.feature-text {
+  color: var(--md-default-fg-color--light);
+  line-height: 1.6;
+}
+
+/* Hide default h1 on home page if we use custom hero */
+.hide-h1 h1 {
+  display: none;
+}

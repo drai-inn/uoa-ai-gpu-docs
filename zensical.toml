@@ -1,6 +1,13 @@
 [project]
 site_name = "UoA Research AI GPU Platform"
 url = "https://drai-inn.github.io/uoa-ai-gpu-docs/"
+copyright = """
+Copyright &copy; 2025 The University of Auckland<br>
+<a href="https://www.auckland.ac.nz/en/admin/footer-links/disclaimer.html" target="_blank" rel="noopener">Disclaimer</a> &nbsp;|&nbsp;
+<a href="https://www.auckland.ac.nz/en/privacy.html" target="_blank" rel="noopener">Privacy</a> &nbsp;|&nbsp;
+<a href="https://www.auckland.ac.nz/en/accessibility.html" target="_blank" rel="noopener">Accessibility</a> &nbsp;|&nbsp;
+<a href="https://uoaprod.service-now.com/sp?id=sc_cat_item&table=sc_cat_item&sys_id=563dedfadbaa3410e836be37f496197f" target="_blank" rel="noopener">Feedback</a>
+"""
 
 [repo]
 url = "https://github.com/drai-inn/uoa-ai-gpu-docs"
@@ -44,14 +51,7 @@ toggle.name = "Switch to light mode"
 text = "Inter"
 code = "Jetbrains Mono"
 
-[copyright]
-text = """
-Copyright &copy; 2025 The University of Auckland<br>
-<a href="https://www.auckland.ac.nz/en/admin/footer-links/disclaimer.html" target="_blank" rel="noopener">Disclaimer</a> &nbsp;|&nbsp;
-<a href="https://www.auckland.ac.nz/en/privacy.html" target="_blank" rel="noopener">Privacy</a> &nbsp;|&nbsp;
-<a href="https://www.auckland.ac.nz/en/accessibility.html" target="_blank" rel="noopener">Accessibility</a> &nbsp;|&nbsp;
-<a href="https://uoaprod.service-now.com/sp?id=sc_cat_item&table=sc_cat_item&sys_id=563dedfadbaa3410e836be37f496197f" target="_blank" rel="noopener">Feedback</a>
-"""
+
 
 [[project.theme.social]]
 icon = "fontawesome/brands/github"
@@ -61,5 +61,5 @@ name = "GitHub"
 [[project.theme.social]]
 icon = "fontawesome/solid/house"
 link = "https://research-hub.auckland.ac.nz/subhub/research-software-and-computing"
-name = "Research Software and Computing"
+name = "Research AI, software and computing"
 

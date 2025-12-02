@@ -45,4 +45,21 @@ text = "Inter"
 code = "Jetbrains Mono"
 
 [copyright]
-text = "Copyright &copy; 2025 The University of Auckland"
+text = """
+Copyright &copy; 2025 The University of Auckland<br>
+<a href="https://www.auckland.ac.nz/en/admin/footer-links/disclaimer.html" target="_blank" rel="noopener">Disclaimer</a> &nbsp;|&nbsp;
+<a href="https://www.auckland.ac.nz/en/privacy.html" target="_blank" rel="noopener">Privacy</a> &nbsp;|&nbsp;
+<a href="https://www.auckland.ac.nz/en/accessibility.html" target="_blank" rel="noopener">Accessibility</a> &nbsp;|&nbsp;
+<a href="https://uoaprod.service-now.com/sp?id=sc_cat_item&table=sc_cat_item&sys_id=563dedfadbaa3410e836be37f496197f" target="_blank" rel="noopener">Feedback</a>
+"""
+
+[[project.theme.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/drai-inn/uoa-ai-gpu-docs"
+name = "GitHub"
+
+[[project.theme.social]]
+icon = "fontawesome/solid/house"
+link = "https://research-hub.auckland.ac.nz/subhub/research-software-and-computing"
+name = "Research Software and Computing"
+

@@ -45,6 +45,10 @@ hide:
 
 <div class="grid cards" markdown>
 
+-   [**Accessing the Cluster**](guides/accessing-the-cluster.md)
+    ---
+    Guide on how to authenticate and connect to the Kubernetes cluster.
+
 -   [**Running LLMs on NeSI**](guides/llm-on-nesi.md)
     ---
     Step-by-step guide to deploying Large Language Models.

@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../accessing-the-cluster/">
+        <link rel="prev" href="../../contributing/">
       
       
-        <link rel="next" href="../../platform/overview/">
+        <link rel="next" href="../llm-on-nesi/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Running LLMs on NeSI - UoA Research AI GPU Platform</title>
+        <title>Accessing the Kubernetes Cluster - UoA Research AI GPU Platform</title>
       
     
     
@@ -108,7 +108,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#running-llms-on-nesi" class="md-skip">
+        <a href="#accessing-the-kubernetes-cluster" class="md-skip">
           Skip to content
         </a>
       
@@ -144,7 +144,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Running LLMs on NeSI
+              Accessing the Kubernetes Cluster
             
           </span>
         </div>
@@ -368,34 +368,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../accessing-the-cluster/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Accessing the Kubernetes Cluster
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -415,7 +387,7 @@
   <span class="md-ellipsis">
     
   
-    Running LLMs on NeSI
+    Accessing the Kubernetes Cluster
   
 
     
@@ -433,7 +405,7 @@
   <span class="md-ellipsis">
     
   
-    Running LLMs on NeSI
+    Accessing the Kubernetes Cluster
   
 
     
@@ -460,10 +432,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#1-prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Prerequisites
+        1. Prerequisites
       
     </span>
   </a>
@@ -471,10 +443,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
+  <a href="#2-set-up-the-config-file" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Quick Start
+        2. Set up the config file
       
     </span>
   </a>
@@ -482,10 +454,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#repository" class="md-nav__link">
+  <a href="#3-connecting-to-the-cluster" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Repository
+        3. Connecting to the Cluster
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caveats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caveats
       
     </span>
   </a>
@@ -496,6 +479,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../llm-on-nesi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Running LLMs on NeSI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -700,10 +711,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
+  <a href="#1-prerequisites" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Prerequisites
+        1. Prerequisites
       
     </span>
   </a>
@@ -711,10 +722,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#quick-start" class="md-nav__link">
+  <a href="#2-set-up-the-config-file" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Quick Start
+        2. Set up the config file
       
     </span>
   </a>
@@ -722,10 +733,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#repository" class="md-nav__link">
+  <a href="#3-connecting-to-the-cluster" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Repository
+        3. Connecting to the Cluster
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#caveats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caveats
       
     </span>
   </a>
@@ -747,25 +769,65 @@
                 
                   
 
-<h1 id="running-llms-on-nesi">Running LLMs on NeSI<a class="headerlink" href="#running-llms-on-nesi" title="Permanent link">&para;</a></h1>
-<p>This guide provides an overview of how to deploy and run Large Language Models (LLMs) on the NeSI HPC platform using the UoA AI GPU resources.</p>
-<h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
-<p>Before you begin, ensure you have:</p>
-<ul>
-<li><strong>Docker Engine</strong>: Installed locally (e.g., <a href="https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository">Docker Desktop</a>).</li>
-<li><strong>SSH Access</strong>: Configured SSH keys for accessing the VM (<code>GatewayPorts yes</code> required in <code>sshd_config</code>).</li>
-<li><strong>DuckDNS</strong>: A domain and API key for external access.</li>
-<li><strong>API Keys</strong>: OpenAI, LiteLLM, etc., as needed for your specific model.</li>
-</ul>
-<h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
+<h1 id="accessing-the-kubernetes-cluster">Accessing the Kubernetes Cluster<a class="headerlink" href="#accessing-the-kubernetes-cluster" title="Permanent link">&para;</a></h1>
+<h2 id="1-prerequisites">1. Prerequisites<a class="headerlink" href="#1-prerequisites" title="Permanent link">&para;</a></h2>
+<p>Ensure you have <code>kubectl</code> installed.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>kubectl
+</span></code></pre></div>
+<p>This configuration uses OIDC (OpenID Connect) for authentication via Keycloak. To access the cluster, you must have the <code>oidc-login</code> plugin installed.</p>
+<p>If you have Krew installed, this is the most reliable method:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>kubectl<span class="w"> </span>krew<span class="w"> </span>install<span class="w"> </span>oidc-login
+</span></code></pre></div></p>
+<hr />
+<h2 id="2-set-up-the-config-file">2. Set up the config file<a class="headerlink" href="#2-set-up-the-config-file" title="Permanent link">&para;</a></h2>
+<p>Below YAML is the configuration file that you need to connect to the cluster. By default, Kubectl will look for this file in <code>~/.kube/config</code>.</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v1</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nt">clusters</span><span class="p">:</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">cluster</span><span class="p">:</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nt">certificate-authority-data</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUM2akNDQWRLZ0F3SUJBZ0lCQURBTkJna3Foa2lHOXcwQkFRc0ZBREFWTVJNd0VRWURWUVFERXdwcmRXSmwKY201bGRHVnpNQjRYRFRJMU1UQXdOakl4TkRFeE1Gb1hEVE0xTVRBd05ESXhORFl4TUZvd0ZURVRNQkVHQTFVRQpBeE1LYTNWaVpYSnVaWFJsY3pDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUJBTFdDCnFsMXl6b1RGOGVuSFMwalA1SXFtN3JhYWtaZzMvcFJpd0hjTWFPTDZBQUFkdGpEMWNMRkVpQ1EwRzdpN1lIVEwKMmxTd0FNanUvYXN5WXRNMWV5Nzc1K2J2UzM2V2Z4ajlmUTZ6NXBDR0I5eExqRzVnSG5rWURYRGFrVlI2bGl1ZApQM0lpemthOXFPTzBVdmpEVGh2TDRPd3Z0dUtKV0VFM0RYcXpMcmJvVmF4RmdROFY3ZmVnWDJUcXJBWEZ5SS83Cnk4RlliTWJMRUJvdHh3V3RnTXlGMlllQ09pT2VOTCt4cnAyQjZ5aGV5ZG8zQmJzRkNPY3RhQTFIV1dqQ3BHc0kKWWUvcFVYRlVNU29DMkpMM2toK3k3UTFia1ZpUm9jaHBEY3VaQUxpbUUxaTBZdEdST0d0bW9QdDdEaFBkNnJNcwpxeUNsemFCdk53NFJmRmo3UzY4Q0F3RUFBYU5GTUVNd0RnWURWUjBQQVFIL0JBUURBZ0trTUJJR0ExVWRFd0VCCi93UUlNQVlCQWY4Q0FRQXdIUVlEVlIwT0JCWUVGTEI4TEVuWTRJZFpMdExkY3lkNjNiQlcwalVNTUEwR0NTcUcKU0liM0RRRUJDd1VBQTRJQkFRQTRwSFQ1ZnV1aUZTTkJhUmlLRFpyRE5Nc0tNbmdUTGhJTHdpT3pXQk11NGd3MgpRQ3c3N0xWcTBHbWhENG5iQmUvNjI3dkhjeEVKV1NBd25jYUZvQ09zNzFIVkhBUnBMRks5SXN6VkdVZjlYOG1vCkdJeTVMbnBvcGRlU0NUa3hjSk5oUU1QNURlMjhvYThlUEU0K0prRFM5Q3dPWTVVSDBPY204RElKalphWjhYUy8KZmxYNXFJNHgvOXRtZnQ0M3d4Vk4zS25VMVJtSjhSUzFNSFZkNDdwWE5ZUTBqY2hrNEtyYkM1T2t6T1dBMktFNwpPZXBPTS9VUGlsVG1DR1owMENNNGFWVW8yMCsxQUU2aVRIWVdnNndxUHhwVHBxRGorUko1bXJzb2QrcWJ2NUR3CncxQlNyNVRXbFRMbVRCMlZSc0JUWFc2Ri8rSXFGUFdtQTRrcno2UHoKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="nt">server</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://163.7.145.113:6443</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">capi131-drai-ai-test</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="nt">contexts</span><span class="p">:</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">context</span><span class="p">:</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="nt">cluster</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">capi131-drai-ai-test</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">    </span><span class="nt">user</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">oidc</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">capi131-drai-ai-test</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="nt">current-context</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">capi131-drai-ai-test</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Config</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="nt">preferences</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">{}</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="nt">users</span><span class="p">:</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">oidc</span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">  </span><span class="nt">user</span><span class="p">:</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">    </span><span class="nt">exec</span><span class="p">:</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">      </span><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">client.authentication.k8s.io/v1</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">      </span><span class="nt">args</span><span class="p">:</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">oidc-login</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">get-token</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--oidc-issuer-url=https://keycloak.test.drai.auckland.ac.nz/realms/drai</span>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--oidc-client-id=k8s-test</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--oidc-client-secret=0JgSbpmVgvqNpjxn5u5ExcMeLpGCcRYi</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">--oidc-extra-scope=groups</span>
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">      </span><span class="nt">command</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kubectl</span>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">      </span><span class="nt">env</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">null</span>
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="w">      </span><span class="nt">interactiveMode</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Never</span>
+</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="w">      </span><span class="nt">provideClusterInfo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+</span></code></pre></div>
+<hr />
+<h2 id="3-connecting-to-the-cluster">3. Connecting to the Cluster<a class="headerlink" href="#3-connecting-to-the-cluster" title="Permanent link">&para;</a></h2>
+<p>Upon running your first <code>kubectl</code> command:</p>
 <ol>
-<li><strong>Configuration</strong>: Create a <code>.env</code> file with your secrets (API keys, passwords).</li>
-<li><strong>Launch</strong>: Run <code>sudo docker compose up -d</code> to start the services.</li>
-<li><strong>HPC Job Submission</strong>: Use the provided Slurm scripts to submit your model inference job to the HPC nodes.</li>
+<li>A browser window will automatically open loading the Keycloak login page.</li>
+<li>Log in with your standard credentials.</li>
+<li>Once authenticated, the browser will display "You are logged in," and your terminal command will execute.</li>
 </ol>
-<h2 id="repository">Repository<a class="headerlink" href="#repository" title="Permanent link">&para;</a></h2>
-<p>For the full tutorial, example <code>.env</code> files, and Slurm submission scripts, please refer to the source repository:</p>
-<p><a href="https://github.com/drai-inn/llm-nesi-example"><strong>drai-inn/llm-nesi-example</strong></a></p>
+<p>Here are some useful commands to get started:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-n<span class="w"> </span>kai-test
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>kubectl<span class="w"> </span>get<span class="w"> </span>services<span class="w"> </span>-n<span class="w"> </span>kai-test
+</span></code></pre></div>
+<hr />
+<h2 id="caveats">Caveats<a class="headerlink" href="#caveats" title="Permanent link">&para;</a></h2>
+<p>At this stage, we are still working on the Tuakiri integration, and only able to provide you access if you already have an account with us. Please reach out to <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#106;&#117;&#110;&#46;&#104;&#117;&#104;&#64;&#97;&#117;&#99;&#107;&#108;&#97;&#110;&#100;&#46;&#97;&#99;&#46;&#110;&#122;">&#106;&#117;&#110;&#46;&#104;&#117;&#104;&#64;&#97;&#117;&#99;&#107;&#108;&#97;&#110;&#100;&#46;&#97;&#99;&#46;&#110;&#122;</a> if you would like to request an account.</p>
 
 
 

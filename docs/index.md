@@ -8,32 +8,32 @@ hide:
   <div class="hero-title">Research AI GPU Platform</div>
   <div class="hero-subtitle">Accelerating research with high-performance computing, scalable infrastructure, and secure management.</div>
   <div class="hero-actions">
-    <a href="guides/llm-on-nesi/" class="md-button md-button--primary hero-btn">Get Started</a>
-    <a href="platform/overview/" class="md-button hero-btn-secondary">View Architecture</a>
+    <a href="guides/llm-on-nesi/" class="hero-btn">Get Started</a>
+    <a href="platform/overview/" class="hero-btn-secondary">View Architecture</a>
   </div>
 </div>
 
 <div class="grid cards" markdown>
 
--   :material-server-network:{ .lg .middle } **Scalable Infrastructure**
+-   :lucide-server: **Scalable Infrastructure**
 
     ---
 
     Built on Kubernetes to provide flexible and scalable GPU resources for diverse research workloads, from training to inference.
 
--   :material-shield-check:{ .lg .middle } **Secure & Managed**
+-   :lucide-shield-check: **Secure & Managed**
 
     ---
 
     Integrated with Keycloak for secure authentication and robust policy management, ensuring your research data remains protected.
 
--   :material-school:{ .lg .middle } **Research Focused**
+-   :lucide-graduation-cap: **Research Focused**
 
     ---
 
     Tailored specifically to support the needs of academic research, providing the compute power required for breakthrough discoveries.
 
--   :material-account-group:{ .lg .middle } **Community Driven**
+-   :lucide-users: **Community Driven**
 
     ---
 

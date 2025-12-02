@@ -7,10 +7,28 @@ url = "https://github.com/drai-inn/uoa-ai-gpu-docs"
 name = "drai-inn/uoa-ai-gpu-docs"
 edit_uri = "edit/main/docs/"
 
+[nav]
+Home = "index.md"
+Guides = "guides/"
+Platform = "platform/"
+Reference = "reference/"
+
 [theme]
 name = "zensical"
 logo = "assets/ake-uoa-k8s-party.gif"
 favicon = "assets/ake-uoa-k8s-party.gif"
+extra_css = ["stylesheets/extra.css"]
+
+[project.theme]
+features = [
+    "navigation.tabs",
+    "navigation.sections",
+    "navigation.top",
+    "navigation.footer",
+    "search.suggest",
+    "search.highlight",
+    "content.code.copy"
+]
 
 [[project.theme.palette]]
 scheme = "default"

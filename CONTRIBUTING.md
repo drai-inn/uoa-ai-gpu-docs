@@ -22,7 +22,7 @@ To keep our docs consistent and friendly:
     *   Use `code blocks` for commands and file paths.
     *   Use **bold** for UI elements or key terms.
 *   **Images**: Keep screenshots focused and relevant.
-*   **Icons**: We use Lucide icons (e.g., `lucide/server`).
+*   **Icons**: We use Lucide icons (e.g., `:lucide-server:`).
 
 ## Development Setup
 

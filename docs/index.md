@@ -61,8 +61,5 @@ hide:
     ---
     Performance metrics and comparison data.
 
--   [**Community & Contributing**](contributing.md)
-    ---
-    Join the community, report issues, and contribute guides.
 
 </div>

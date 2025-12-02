@@ -19,15 +19,33 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install dependencies
-        run: python -m pip install -r requirements.txt
-      - name: Configure Preview URL
         run: |
-          PR_NUMBER=${{ github.event.number }}
-          REPO_OWNER=${{ github.repository_owner }}
-          REPO_NAME=${{ github.event.repository.name }}
-          PREVIEW_URL="https://${REPO_OWNER}.github.io/${REPO_NAME}/previews/pr-${PR_NUMBER}/"
-          echo "Setting site url to: $PREVIEW_URL"
-          sed -i "s|url = \".*\"|url = \"$PREVIEW_URL\"|g" zensical.toml
+          python -m pip install -r requirements.txt
+          python -m pip install toml
+      - name: Configure Preview URL
+        shell: python
+        env:
+          PR_NUMBER: ${{ github.event.number }}
+          REPO_OWNER: ${{ github.repository_owner }}
+          REPO_NAME: ${{ github.event.repository.name }}
+        run: |
+          import os
+          import toml
+
+          pr_number = os.environ['PR_NUMBER']
+          repo_owner = os.environ['REPO_OWNER']
+          repo_name = os.environ['REPO_NAME']
+          preview_url = f"https://{repo_owner}.github.io/{repo_name}/previews/pr-{pr_number}/"
+          
+          print(f"Setting site url to: {preview_url}")
+          
+          with open('zensical.toml', 'r') as f:
+              config = toml.load(f)
+          
+          config['project']['url'] = preview_url
+          
+          with open('zensical.toml', 'w') as f:
+              toml.dump(config, f)
       - name: Build docs
         run: zensical build
       - name: Deploy preview

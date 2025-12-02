@@ -58,6 +58,7 @@ If you want to preview changes locally or make significant updates, here's how t
 2.  **Commit**: `git commit -m "docs: add guide on pytorch"`
 3.  **Push**: `git push origin my-new-guide`
 4.  **Open a Pull Request**: Go to GitHub and open a PR against `main`.
+5.  **Review Preview**: A comment will be automatically posted on your PR with a link to a live preview of your changes (e.g., `https://drai-inn.github.io/uoa-ai-gpu-docs/previews/pr-123/`). Use this to verify your changes look correct. Note that this preview is temporary and will be deleted when the PR is closed.
 
 ## Community Standards
 

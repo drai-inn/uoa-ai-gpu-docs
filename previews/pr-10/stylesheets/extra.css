@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/Inter-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../assets/Inter-Italic.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/Inter-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/Inter-Bold.otf') format('opentype');
+}
+
+:root {
+  --uoa-blue: #00467F;
+  --uoa-light-blue: #0099D8;
+}
+
+/* Typography Overrides */
+h1 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  margin: -2rem -2rem 4rem -2rem;
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, var(--uoa-blue) 0%, var(--uoa-light-blue) 100%);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Adjust for mobile */
+@media screen and (max-width: 76.1875em) {
+  .hero-section {
+    margin: -2rem -1rem 2rem -1rem;
+  }
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 250;
+  max-width: 800px;
+  margin-bottom: 2.5rem;
+  opacity: 0.9;
+  color: white;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Button Styles */
+.hero-btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background-color: white;
+  color: var(--uoa-blue);
+}
+
+.hero-btn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+}
+
+.hero-btn-secondary {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.hero-btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Feature Cards Grid */
+.grid.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
